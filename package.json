@@ -1,6 +1,6 @@
 {
   "name": "@el-el-san/gemini-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for Google Gemini API integration",
   "main": "dist/mcp.js",
   "bin": {

@@ -2,7 +2,7 @@
   "name": "@el-el-san/gemini-mcp",
   "version": "1.0.0",
   "description": "MCP server for Google Gemini API integration",
-  "main": "mcp.ts",
+  "main": "dist/mcp.js",
   "bin": {
     "gemini-mcp": "./dist/mcp.js"
   },

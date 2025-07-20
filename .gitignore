@@ -76,6 +76,6 @@ coverage/
 
 # Project specific exclusions
 *.mp4
-.mcp.json
+.mcp.json*
 .claude
 CLAUDE.md

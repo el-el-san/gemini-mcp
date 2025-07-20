@@ -4,12 +4,13 @@
   "description": "MCP server for Google Gemini API integration",
   "main": "mcp.ts",
   "bin": {
-    "gemini-mcp": "./mcp.ts"
+    "gemini-mcp": "./dist/mcp.js"
   },
   "scripts": {
     "start": "ts-node mcp.ts",
-    "build": "tsc --noEmit",
-    "compile": "tsc"
+    "build": "tsc",
+    "compile": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "keywords": ["mcp", "gemini", "google", "ai", "chat", "model-context-protocol"],
   "repository": {
@@ -26,7 +27,7 @@
     "node": ">=18.0.0"
   },
   "files": [
-    "mcp.ts",
+    "dist/**/*",
     "README.md"
   ],
   "dependencies": {

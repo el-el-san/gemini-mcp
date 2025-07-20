@@ -30,14 +30,30 @@ export GEMINI_API_KEY="your-gemini-api-key-here"
 
 Add to your MCP client configuration (e.g., Claude Desktop):
 
+#### Default Configuration
 ```json
 {
   "mcpServers": {
-    "gemini": {
+    "gemini-mcp": {
       "command": "npx",
       "args": ["@el-el-san/gemini-mcp"],
       "env": {
-        "GEMINI_API_KEY": "your-gemini-api-key-here"
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+#### For Windows
+```json
+{
+  "mcpServers": {
+    "gemini-mcp": {
+      "command": "cmd",
+      "args": ["/c", "npx", "@el-el-san/gemini-mcp"],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}"
       }
     }
   }

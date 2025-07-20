@@ -1,0 +1,43 @@
+{
+  "name": "@el-el-san/gemini-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Google Gemini API integration",
+  "main": "mcp.ts",
+  "bin": {
+    "gemini-mcp": "./mcp.ts"
+  },
+  "scripts": {
+    "start": "ts-node mcp.ts",
+    "build": "tsc --noEmit",
+    "compile": "tsc"
+  },
+  "keywords": ["mcp", "gemini", "google", "ai", "chat", "model-context-protocol"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/el-el-san/gemini-mcp.git"
+  },
+  "homepage": "https://github.com/el-el-san/gemini-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/el-el-san/gemini-mcp/issues"
+  },
+  "license": "MIT",
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "mcp.ts",
+    "README.md"
+  ],
+  "dependencies": {
+    "@google/genai": "latest",
+    "@modelcontextprotocol/sdk": "latest",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@types/readline-sync": "^1.4.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
